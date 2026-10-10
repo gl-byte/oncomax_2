@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mensajes y consejos prácticos para pacientes, familias y amigos que acompañan un proceso oncológico.">
+  <title>Lazos de apoyo | OncoMax</title>
+  <meta name="theme-color" content="#F8F5F0">
+  <link rel="icon" href="assets/img/logo-simbolo.png">
+  <!-- Marca la pagina como "con JavaScript" antes de pintarla, para evitar parpadeos. -->
+  <script>document.documentElement.classList.add('js');</script>
+  <!-- Tipografias: Fraunces (titulos) y Manrope (texto). -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&amp;family=Manrope:wght@400..800&amp;display=swap">
+  <link rel="stylesheet" href="assets/css/estilos.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <!-- ================= CABECERA ================= -->
+  <header class="barra">
+    <div class="contenedor barra__interior">
+      <a class="barra__logo" href="index.html" aria-label="OncoMax, ir al inicio">
+        <img src="assets/img/logo-oncomax-horizontal.png" alt="OncoMax" width="132" height="40">
+      </a>
+      <nav class="barra__nav" id="menu" aria-label="Principal">
+        <a href="index.html"><span class="barra__nav-num">01</span>Inicio</a>
+        <a href="servicios.html"><span class="barra__nav-num">02</span>Servicios</a>
+        <a href="asistencia.html"><span class="barra__nav-num">03</span>Asistencia</a>
+        <a href="nosotros.html"><span class="barra__nav-num">04</span>Nosotros</a>
+        <a href="oncologia.html"><span class="barra__nav-num">05</span>Oncología</a>
+        <a href="lazos.html" aria-current="page"><span class="barra__nav-num">06</span>Lazos de apoyo</a>
+        <a class="barra__nav-reserva" href="reserva.html"><span class="barra__nav-num">07</span>Reservar cita</a>
+      </nav>
+      <a class="btn btn--chico barra__cta" href="reserva.html">Reservar cita<span class="btn__flecha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <button class="barra__menu" type="button" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span class="sr-solo">Abrir menú</span>
+      </button>
+    </div>
+  </header>
+  <div class="velo" aria-hidden="true"></div>
+
+  <main id="contenido">
+    <!-- ================= CABECERA DE LA PAGINA ================= -->
+    <section class="portada">
+      <div class="contenedor portada__grid">
+        <div>
+          <nav class="migas" aria-label="Ruta de navegación"><a href="index.html">Inicio</a><span aria-hidden="true">/</span><span aria-current="page">Lazos de apoyo</span></nav>
+          <p class="antetitulo" data-aparecer>Acompañar</p>
+          <h1 class="titular" data-dividir>Lazos <em>de apoyo</em></h1>
+          <p class="texto-grande" data-aparecer style="--i:2">Un espacio con mensajes sencillos para pacientes, familiares y amigos.</p>
+        </div>
+        <div class="portada__visual con-contorno" data-aparecer style="--i:1">
+          <figure class="arco" data-aparecer="imagen">
+            <img src="assets/img/web/asistencia-domiciliaria.jpg" alt="Profesional de OncoMax acompañando a una paciente en su hogar" width="1100" height="821" style="--foco: 100% 25%; --zoom: 1.5">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MENSAJES POR AUDIENCIA ================= -->
+    <section class="seccion">
+      <div class="contenedor" data-pestanas>
+        <div class="encabezado">
+          <p class="antetitulo" data-aparecer><b>01</b> Mensajes</p>
+          <h2 data-dividir>Una palabra, <em>una acción</em></h2>
+        </div>
+
+        <div class="audiencias" role="tablist" aria-label="¿Para quién es el mensaje?" data-aparecer>
+          <button class="audiencia" type="button" role="tab" id="tab-paciente" aria-controls="msj-paciente" aria-selected="true"><span><img src="assets/icons/ui/corazon.svg" alt=""></span>Paciente</button>
+          <button class="audiencia" type="button" role="tab" id="tab-familia" aria-controls="msj-familia" aria-selected="false"><span><img src="assets/icons/ui/casa.svg" alt=""></span>Familia</button>
+          <button class="audiencia" type="button" role="tab" id="tab-amistades" aria-controls="msj-amistades" aria-selected="false"><span><img src="assets/icons/ui/mensaje.svg" alt=""></span>Amistades</button>
+          <button class="audiencia" type="button" role="tab" id="tab-cuidadores" aria-controls="msj-cuidadores" aria-selected="false"><span><img src="assets/icons/ui/mano.svg" alt=""></span>Cuidadores</button>
+          <button class="audiencia" type="button" role="tab" id="tab-palabras" aria-controls="msj-palabras" aria-selected="false"><span><img src="assets/icons/ui/lazo.svg" alt=""></span>Palabras</button>
+          <button class="audiencia" type="button" role="tab" id="tab-dia" aria-controls="msj-dia" aria-selected="false"><span><img src="assets/icons/ui/sonrisa.svg" alt=""></span>Día a día</button>
+        </div>
+
+        <article class="mensaje" role="tabpanel" id="msj-paciente" aria-labelledby="tab-paciente" tabindex="0">
+          <div>
+            <p class="antetitulo">Para el paciente</p>
+            <blockquote>No tienes que vivir cada paso en soledad. Pedir apoyo también es cuidarte.</blockquote>
+          </div>
+          <aside class="mensaje__accion">
+            <p class="antetitulo">Una acción para hoy</p>
+            <p>Elige a una persona de confianza y cuéntale qué tipo de ayuda necesitas: compañía, transporte, conversación o descanso.</p>
+          </aside>
+        </article>
+
+        <article class="mensaje" role="tabpanel" id="msj-familia" aria-labelledby="tab-familia" tabindex="0">
+          <div>
+            <p class="antetitulo">Para la familia</p>
+            <blockquote>Escuchar con calma puede ser una ayuda muy valiosa durante el tratamiento.</blockquote>
+          </div>
+          <aside class="mensaje__accion">
+            <p class="antetitulo">Una acción para hoy</p>
+            <p>Pregunta: "¿Qué puedo hacer por ti hoy?". Una pregunta clara evita suponer lo que la otra persona necesita.</p>
+          </aside>
+        </article>
+
+        <article class="mensaje" role="tabpanel" id="msj-amistades" aria-labelledby="tab-amistades" tabindex="0">
+          <div>
+            <p class="antetitulo">Para los amigos</p>
+            <blockquote>Una llamada, una visita o un mensaje breve pueden acompañar mucho.</blockquote>
+          </div>
+          <aside class="mensaje__accion">
+            <p class="antetitulo">Una acción para hoy</p>
+            <p>Envía un mensaje sencillo y sin exigir respuesta. Lo importante es recordar que sigues presente.</p>
+          </aside>
+        </article>
+
+        <article class="mensaje" role="tabpanel" id="msj-cuidadores" aria-labelledby="tab-cuidadores" tabindex="0">
+          <div>
+            <p class="antetitulo">Para quien cuida</p>
+            <blockquote>Acompañar cansa. Cuidarte a ti también es cuidar al paciente.</blockquote>
+          </div>
+          <aside class="mensaje__accion">
+            <p class="antetitulo">Una acción para hoy</p>
+            <p>Reserva un momento del día solo para ti y pide relevo cuando lo necesites: nadie puede acompañar sin descansar.</p>
+          </aside>
+        </article>
+
+        <article class="mensaje" role="tabpanel" id="msj-palabras" aria-labelledby="tab-palabras" tabindex="0">
+          <div>
+            <p class="antetitulo">Qué decir</p>
+            <blockquote>A veces no hacen falta frases perfectas, sino presencia.</blockquote>
+          </div>
+          <aside class="mensaje__accion">
+            <p class="antetitulo">Una acción para hoy</p>
+            <p>Cambia "sé fuerte" por "estoy aquí". La segunda frase acompaña sin exigirle nada a la otra persona.</p>
+          </aside>
+        </article>
+
+        <article class="mensaje" role="tabpanel" id="msj-dia" aria-labelledby="tab-dia" tabindex="0">
+          <div>
+            <p class="antetitulo">La vida sigue</p>
+            <blockquote>Mantener rutinas y gustos personales también forma parte del cuidado.</blockquote>
+          </div>
+          <aside class="mensaje__accion">
+            <p class="antetitulo">Una acción para hoy</p>
+            <p>Propón un plan sencillo y sin esfuerzo: una caminata corta, una serie compartida o una comida favorita.</p>
+          </aside>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= FORMAS DE ACOMPAÑAR ================= -->
+    <section class="seccion seccion--lino">
+      <div class="contenedor dos-columnas">
+        <div class="dos-columnas__fija">
+          <p class="antetitulo" data-aparecer><b>02</b> Guía rápida</p>
+          <h2 data-dividir>Formas de <em>acompañar</em></h2>
+        </div>
+        <div class="acordeon" data-aparecer>
+          <details>
+            <summary>Escuchar sin interrumpir</summary>
+            <p>Permite que la persona exprese cómo se siente sin obligarla a responder.</p>
+          </details>
+          <details>
+            <summary>Ofrecer ayuda concreta</summary>
+            <p>Por ejemplo, acompañar a una cita o ayudar con una tarea cotidiana.</p>
+          </details>
+          <details>
+            <summary>Respetar sus tiempos</summary>
+            <p>Cada persona enfrenta el proceso de una manera distinta.</p>
+          </details>
+          <details>
+            <summary>Acompañar durante una cita</summary>
+            <p>Puedes ayudar a anotar preguntas y recordar las indicaciones del profesional.</p>
+          </details>
+          <details>
+            <summary>Cuidar también al cuidador</summary>
+            <p>Quien acompaña necesita descansar, conversar y pedir ayuda cuando se siente cansado.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LLAMADO FINAL ================= -->
+    <section class="llamado">
+      <img class="llamado__simbolo" src="assets/img/logo-simbolo.png" alt="">
+      <div class="contenedor">
+        <h2 data-dividir>¿Necesitas orientación <em>para acompañar?</em></h2>
+        <p data-aparecer>El equipo de OncoMax también atiende a familiares y personas cuidadoras.</p>
+        <div class="acciones acciones--centro" data-aparecer>
+          <a class="btn btn--claro" href="reserva.html">Solicitar orientación<span class="btn__flecha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          <a class="btn btn--linea" href="nosotros.html">Conocer al equipo<span class="btn__flecha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= PIE DE PAGINA ================= -->
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie__superior">
+        <p class="pie__frase">Tu lucha es nuestra lucha.<br><em>Cuidamos de ti con el corazón.</em></p>
+        <a class="btn" href="reserva.html">Reservar una cita<span class="btn__flecha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      </div>
+      <div class="pie__columnas">
+        <div>
+          <a class="pie__logo" href="index.html"><img src="assets/img/logo-oncomax-horizontal.png" alt="OncoMax" width="139" height="42"></a>
+          <p>Centro Médico Integral Oncológico. Orientación, atención y acompañamiento humano.</p>
+        </div>
+        <div>
+          <h3>Páginas</h3>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="asistencia.html">Asistencia Médica</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="oncologia.html">Oncología</a></li>
+            <li><a href="lazos.html">Lazos de apoyo</a></li>
+            <li><a href="reserva.html">Reservar cita</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contacto</h3>
+          <ul>
+            <li class="pie__dato"><small>WhatsApp</small><a href="https://wa.me/59164556725" target="_blank" rel="noopener">+591 64556725</a></li>
+            <li class="pie__dato"><small>Dirección</small>Antofagasta entre Bolívar y Sucre</li>
+            <li class="pie__dato"><small>Ciudad</small>Oruro, Bolivia</li>
+            <li class="pie__dato"><small>Atención</small>Lunes a viernes, mañana y tarde</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Síguenos</h3>
+          <!-- TikTok e Instagram quedan en # hasta tener los enlaces de la clinica. -->
+          <div class="redes">
+            <a href="#" aria-label="TikTok"><img src="assets/icons/tiktok.svg" alt=""></a>
+            <a href="#" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt=""></a>
+            <a href="https://wa.me/59164556725" target="_blank" rel="noopener" aria-label="WhatsApp"><img src="assets/icons/whatsapp.svg" alt=""></a>
+            <a href="https://www.facebook.com/profile.php?id=61578464102459" target="_blank" rel="noopener" aria-label="Facebook"><img src="assets/icons/facebook.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div class="pie__inferior">
+        <p>© 2026 OncoMax · Centro Médico Integral Oncológico · Oruro, Bolivia.</p>
+        <p>La información de este sitio no reemplaza una consulta médica.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/59164556725" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+    <img src="assets/icons/whatsapp.svg" alt=""><span>Escríbenos</span>
+  </a>
+</body>
+</html>

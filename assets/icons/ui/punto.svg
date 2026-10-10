@@ -1,0 +1,13 @@
+<!-- APRENDE: Icono punto. Este archivo dibuja una imagen con formas. Para usar otro icono en la página, cambia
+     src de su img en HTML. Para probar otro color aquí, cambia stroke o fill; algunas reglas de estilos.css lo
+     convierten en blanco. -->
+<!-- APRENDE: Espacio de dibujo: viewBox="0 0 24 24" equivale a una hoja de 24 por 24 unidades. Conserva este
+     marco para no recortar el símbolo. stroke elige el color de las líneas, stroke-width su grosor (prueba 2.2
+     en lugar de 1.8). fill="none" deja el interior vacío; round suaviza extremos y esquinas. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#6E2E94" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+  <!-- APRENDE: Círculo: cx mueve el centro a los lados, cy arriba o abajo y r cambia su tamaño. Aumenta r para
+       agrandarlo dentro del marco de 24 por 24. -->
+  <circle cx="12" cy="12" r="10"/>
+  <!-- APRENDE: Círculo: cx mueve el centro a los lados, cy arriba o abajo y r cambia su tamaño. Aumenta r para
+       agrandarlo dentro del marco de 24 por 24. -->
+  <circle cx="12" cy="12" r="3.5"/></svg>

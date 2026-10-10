@@ -1,0 +1,15 @@
+<!-- APRENDE: Icono telefono. Este archivo dibuja una imagen con formas. Para usar otro icono en la página,
+     cambia src de su img en HTML. Para probar otro color aquí, cambia stroke o fill; algunas reglas de
+     estilos.css lo convierten en blanco. -->
+<!-- APRENDE: Espacio de dibujo: viewBox="0 0 24 24" equivale a una hoja de 24 por 24 unidades. Conserva este
+     marco para no recortar el símbolo. stroke elige el color de las líneas, stroke-width su grosor (prueba 2.2
+     en lugar de 1.8). fill="none" deja el interior vacío; round suaviza extremos y esquinas. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#6E2E94" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+  <!-- APRENDE: Rectángulo: x e y eligen su posición, width el ancho, height el alto y rx el redondeado. Cambia
+       una medida cada vez para ajustar la forma. -->
+  <rect x="6" y="2" width="12" height="20" rx="3"/>
+  <!-- APRENDE: Trazo de una parte del icono. Usa el color y grosor elegidos en svg. d indica por dónde se
+       dibuja: M mueve el lápiz, L dibuja una recta, H/V una línea horizontal/vertical, C una curva y A un arco;
+       Z cierra la figura. Mayúsculas indican posiciones y minúsculas desplazamientos. Prueba cambiar una medida
+       cada vez para observar la forma. -->
+  <path d="M11 18h2"/></svg>

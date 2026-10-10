@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conoce al equipo de OncoMax: doctores, enfermeras, la historia de la clínica y su galería.">
+  <title>Nosotros | OncoMax</title>
+  <meta name="theme-color" content="#F8F5F0">
+  <link rel="icon" href="assets/img/logo-simbolo.png">
+  <!-- Marca la pagina como "con JavaScript" antes de pintarla, para evitar parpadeos. -->
+  <script>document.documentElement.classList.add('js');</script>
+  <!-- Tipografias: Fraunces (titulos) y Manrope (texto). -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&amp;family=Manrope:wght@400..800&amp;display=swap">
+  <link rel="stylesheet" href="assets/css/estilos.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <!-- ================= CABECERA ================= -->
+  <header class="barra">
+    <div class="contenedor barra__interior">
+      <a class="barra__logo" href="index.html" aria-label="OncoMax, ir al inicio">
+        <img src="assets/img/logo-oncomax-horizontal.png" alt="OncoMax" width="132" height="40">
+      </a>
+      <nav class="barra__nav" id="menu" aria-label="Principal">
+        <a href="index.html"><span class="barra__nav-num">01</span>Inicio</a>
+        <a href="servicios.html"><span class="barra__nav-num">02</span>Servicios</a>
+        <a href="asistencia.html"><span class="barra__nav-num">03</span>Asistencia</a>
+        <a href="nosotros.html" aria-current="page"><span class="barra__nav-num">04</span>Nosotros</a>
+        <a href="oncologia.html"><span class="barra__nav-num">05</span>Oncología</a>
+        <a href="lazos.html"><span class="barra__nav-num">06</span>Lazos de apoyo</a>
+        <a class="barra__nav-reserva" href="reserva.html"><span class="barra__nav-num">07</span>Reservar cita</a>
+      </nav>
+      <a class="btn btn--chico barra__cta" href="reserva.html">Reservar cita<span class="btn__flecha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <button class="barra__menu" type="button" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span class="sr-solo">Abrir menú</span>
+      </button>
+    </div>
+  </header>
+  <div class="velo" aria-hidden="true"></div>
+
+  <main id="contenido">
+    <!-- ================= CABECERA DE LA PAGINA ================= -->
+    <section class="portada">
+      <div class="contenedor portada__grid">
+        <div>
+          <nav class="migas" aria-label="Ruta de navegación"><a href="index.html">Inicio</a><span aria-hidden="true">/</span><span aria-current="page">Nosotros</span></nav>
+          <p class="antetitulo" data-aparecer>Quiénes somos</p>
+          <h1 class="titular" data-dividir>Acerca de <em>nosotros</em></h1>
+          <p class="texto-grande" data-aparecer style="--i:2">Conoce al equipo humano que acompaña a nuestros pacientes.</p>
+        </div>
+        <div class="portada__visual con-contorno" data-aparecer style="--i:1">
+          <figure class="arco" data-aparecer="imagen">
+            <img src="assets/img/web/enfermera-margarita.jpg" alt="Enfermera de OncoMax" width="1100" height="821" style="--foco: 100% 28%; --zoom: 1.5">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CIFRAS ================= -->
+    <section class="seccion seccion--corta">
+      <div class="contenedor">
+        <div class="cifras cifras--3" data-escalonar>
+          <!-- data-desde hace que el año cuente desde 2000 y no desde 0. -->
+          <div class="cifra"><b data-contar="2018" data-desde="2000">2018</b><span>Año en que nace el proyecto</span></div>
+          <div class="cifra"><b data-contar="5">5</b><span>Profesionales en el equipo</span></div>
+          <div class="cifra"><b data-contar="3">3</b><span>Áreas de atención</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EQUIPO ================= -->
+    <section class="seccion seccion--sin-arriba">
+      <div class="contenedor">
+        <div class="encabezado encabezado--fila">
+          <div>
+            <p class="antetitulo" data-aparecer><b>01</b> Especialistas y cuidado diario</p>
+            <h2 data-dividir>Nuestro <em>equipo</em></h2>
+            <p class="texto-grande" data-aparecer>Doctores especialistas y enfermeras que acompañan al paciente en el día a día de su tratamiento.</p>
+          </div>
+          <div class="filtros" role="group" aria-label="Filtrar equipo" data-aparecer>
+            <button class="filtro" type="button" data-filtro="todos" aria-pressed="true">Todos</button>
+            <button class="filtro" type="button" data-filtro="doctores" aria-pressed="false">Doctores</button>
+            <button class="filtro" type="button" data-filtro="enfermeras" aria-pressed="false">Enfermeras</button>
+          </div>
+        </div>
+
+        <!-- La biografia de cada persona esta en .miembro__bio; main.js la
+             muestra en un dialogo. Sin JavaScript se ve debajo de la foto. -->
+        <ul class="equipo" data-escalonar>
+          <li class="miembro" data-grupo="doctores">
+            <button class="miembro__boton" type="button" data-bio aria-haspopup="dialog">
+              <figure class="arco"><img src="assets/img/web/doctor-abdon.jpg" alt="Dr. Abdón Vargas" loading="lazy" style="--foco: 100% 20%; --zoom: 1.9"></figure>
+              <span class="miembro__rol">Oncología médica</span>
+              <span class="miembro__nombre">Dr. Abdón Vargas</span>
+              <span class="miembro__ver">Ver biografía<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            </button>
+            <div class="miembro__bio">
+              <dl class="datos">
+                <div><dt>Especialidad</dt><dd>Oncología médica.</dd></div>
+                <div><dt>Historia</dt><dd>Médico de la clínica OncoMax, enfocado en orientar a pacientes y familias durante el proceso de atención.</dd></div>
+                <div><dt>Enfoque</dt><dd>Explicar los pasos del tratamiento con palabras claras y acompañar con respeto.</dd></div>
+              </dl>
+            </div>
+          </li>
+
+          <li class="miembro" data-grupo="doctores">
+            <button class="miembro__boton" type="button" data-bio aria-haspopup="dialog">
+              <figure class="arco"><img src="assets/img/web/doctor-erik.jpg" alt="Dr. Erik Mendoza" loading="lazy" style="--foco: 100% 16%; --zoom: 1.7"></figure>
+              <span class="miembro__rol">Oncología pediátrica</span>
+              <span class="miembro__nombre">Dr. Erik Mendoza</span>
+              <span class="miembro__ver">Ver biografía<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            </button>
+            <div class="miembro__bio">
+              <dl class="datos">
+                <div><dt>Especialidad</dt><dd>Oncología pediátrica.</dd></div>
+                <div><dt>Historia</dt><dd>Profesional dedicado al acompañamiento de niños, adolescentes y sus familias.</dd></div>
+                <div><dt>Enfoque</dt><dd>Atención humana, comunicación sencilla y apoyo durante los controles médicos.</dd></div>
+              </dl>
+            </div>
+          </li>
+
+          <li class="miembro" data-grupo="enfermeras">
+            <button class="miembro__boton" type="button" data-bio aria-haspopup="dialog">
+              <figure class="arco"><img src="assets/img/web/enfermera-margarita.jpg" alt="Margarita Rodríguez" loading="lazy" style="--foco: 100% 28%; --zoom: 1.5"></figure>
+              <span class="miembro__rol">Cuidado y acompañamiento</span>
+              <span class="miembro__nombre">Margarita Rodríguez</span>
+              <span class="miembro__ver">Ver perfil<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            </button>
+            <div class="miembro__bio">
+              <dl class="datos">
+                <div><dt>Área</dt><dd>Cuidado y acompañamiento de pacientes.</dd></div>
+                <div><dt>Tarea diaria</dt><dd>Recibir al paciente, revisar sus signos básicos y avisar al especialista cualquier cambio.</dd></div>
+                <div><dt>Su consejo</dt><dd>"Preguntar nunca está de más: aquí estamos para explicar."</dd></div>
+              </dl>
+            </div>
+          </li>
+
+          <li class="miembro" data-grupo="enfermeras">
+            <button class="miembro__boton" type="button" data-bio aria-haspopup="dialog">
+              <figure class="arco"><img src="assets/img/web/enfermera-carmen.jpg" alt="Carmen Quique" loading="lazy" style="--foco: 100% 22%; --zoom: 2"></figure>
+              <span class="miembro__rol">Apoyo en tratamientos</span>
+              <span class="miembro__nombre">Carmen Quique</span>
+              <span class="miembro__ver">Ver perfil<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            </button>
+            <div class="miembro__bio">
+              <dl class="datos">
+                <div><dt>Área</dt><dd>Apoyo en tratamientos y seguimiento de cuidados médicos.</dd></div>
+                <div><dt>Tarea diaria</dt><dd>Preparar el material de cada sesión y acompañar al paciente durante el procedimiento.</dd></div>
+                <div><dt>Su consejo</dt><dd>"Descansar también forma parte del tratamiento."</dd></div>
+              </dl>
+            </div>
+          </li>
+
+          <li class="miembro" data-grupo="enfermeras">
+            <button class="miembro__boton" type="button" data-bio aria-haspopup="dialog">
+              <figure class="arco"><img src="assets/img/web/enfermera-sofia.jpg" alt="Sofía Ramos" loading="lazy" style="--foco: 100% 15%; --zoom: 2"></figure>
+              <span class="miembro__rol">Control básico y orientación</span>
+              <span class="miembro__nombre">Sofía Ramos</span>
+              <span class="miembro__ver">Ver perfil<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            </button>
+            <div class="miembro__bio">
+              <dl class="datos">
+                <div><dt>Área</dt><dd>Acompañamiento diario, control básico y orientación.</dd></div>
+                <div><dt>Tarea diaria</dt><dd>Explicar los cuidados en casa y resolver dudas sencillas de la familia.</dd></div>
+                <div><dt>Su consejo</dt><dd>"Anota tus dudas: en la consulta se aprovechan mejor."</dd></div>
+              </dl>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <dialog class="dialogo" id="dialogo-bio" aria-labelledby="bio-nombre">
+      <button class="dialogo__cerrar" type="button" data-cerrar aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      <div class="bio">
+        <figure class="foto"></figure>
+        <div class="bio__texto">
+          <p class="antetitulo" data-bio-rol></p>
+          <h3 id="bio-nombre" data-bio-nombre></h3>
+          <div data-bio-texto></div>
+          <a class="btn" href="reserva.html">Reservar una cita<span class="btn__flecha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- ================= EQUIPO ONCOMAX ================= -->
+    <section class="seccion seccion--lino">
+      <div class="contenedor destacado">
+        <figure class="foto" data-aparecer="imagen">
+          <img src="assets/img/web/equipo-oncomax.jpg" alt="Equipo completo de OncoMax" loading="lazy" style="--foco: 50% 62%; --zoom: 1.1">
+        </figure>
+        <div>
+          <p class="antetitulo" data-aparecer><b>02</b> Trabajo humano y vocación de servicio</p>
+          <h2 data-dividir>Equipo <em>OncoMax</em></h2>
+          <dl class="datos" data-aparecer>
+            <div><dt>Cómo trabajamos</dt><dd>Doctores y enfermeras comparten la información del paciente para que no tenga que repetir su historia.</dd></div>
+            <div><dt>Nuestro compromiso</dt><dd>Respeto, escucha y claridad en cada consulta.</dd></div>
+          </dl>
+          <a class="btn" href="reserva.html" data-aparecer>Reservar una cita<span class="btn__flecha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HISTORIA ================= -->
+    <section class="seccion">
+      <div class="contenedor">
+        <div class="encabezado">
+          <p class="antetitulo" data-aparecer><b>03</b> Línea de tiempo</p>
+          <h2 data-dividir>Nuestra <em>historia</em></h2>
+          <p class="texto-grande" data-aparecer>La historia contada en orden, desde la idea inicial hasta hoy.</p>
+        </div>
+        <ol class="historia" data-escalonar>
+          <li class="hito">
+            <span class="hito__anio">2018</span>
+            <h3>La idea</h3>
+            <p>Nace el proyecto de acompañar a pacientes oncológicos y sus familias.</p>
+          </li>
+          <li class="hito">
+            <span class="hito__anio">2021</span>
+            <h3>Nuevo equipo</h3>
+            <p>Se integran profesionales de distintas áreas médicas.</p>
+          </li>
+          <li class="hito">
+            <span class="hito__anio">Hoy</span>
+            <h3>Atención integral</h3>
+            <p>OncoMax continúa creciendo con atención médica y apoyo humano.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= GALERIA ================= -->
+    <section class="seccion seccion--blanca">
+      <div class="contenedor">
+        <div class="encabezado">
+          <p class="antetitulo" data-aparecer><b>04</b> Nuestro espacio</p>
+          <h2 data-dividir>Galería <em>de la clínica</em></h2>
+        </div>
+        <!-- Sin JavaScript cada foto abre la imagen completa. -->
+        <div class="galeria" data-escalonar>
+          <figure class="galeria__item">
+            <a class="galeria__boton" href="assets/img/web/equipo-oncomax.jpg" aria-label="Ampliar: Nuestro equipo completo">
+              <span class="foto"><img src="assets/img/web/equipo-oncomax.jpg" alt="Equipo de la clínica" loading="lazy" style="--foco: 50% 60%; --zoom: 1.1"></span>
+            </a>
+            <figcaption>Nuestro equipo completo</figcaption>
+          </figure>
+          <figure class="galeria__item">
+            <a class="galeria__boton" href="assets/img/web/asistencia-domiciliaria.jpg" aria-label="Ampliar: Atención en el domicilio">
+              <span class="foto"><img src="assets/img/web/asistencia-domiciliaria.jpg" alt="Atención a pacientes en su domicilio" loading="lazy" style="--foco: 100% 22%; --zoom: 2.5"></span>
+            </a>
+            <figcaption>Atención en el domicilio</figcaption>
+          </figure>
+          <figure class="galeria__item">
+            <a class="galeria__boton" href="assets/img/web/servicio-acompanamiento.jpg" aria-label="Ampliar: Acompañamiento durante el tratamiento">
+              <span class="foto"><img src="assets/img/web/servicio-acompanamiento.jpg" alt="Acompañamiento médico" loading="lazy" style="--foco: 100% 75%; --zoom: 2.2"></span>
+            </a>
+            <figcaption>Acompañamiento durante el tratamiento</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <dialog class="dialogo dialogo--visor" id="dialogo-visor" aria-label="Galería de la clínica">
+      <button class="dialogo__cerrar" type="button" data-cerrar aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      <button class="visor__nav visor__nav--ant" type="button" data-anterior aria-label="Foto anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+      <button class="visor__nav visor__nav--sig" type="button" data-siguiente aria-label="Foto siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+      <figure>
+        <img src="assets/img/web/equipo-oncomax.jpg" alt="">
+        <figcaption></figcaption>
+      </figure>
+    </dialog>
+
+    <!-- ================= VIDEOS ================= -->
+    <section class="seccion seccion--lino">
+      <div class="contenedor">
+        <div class="encabezado">
+          <p class="antetitulo" data-aparecer><b>05</b> Material audiovisual</p>
+          <h2 data-dividir>Videos</h2>
+        </div>
+        <div class="videos" data-escalonar>
+          <article class="video-item">
+            <div class="video-item__marco">
+              <iframe src="https://www.youtube.com/embed/0Ibl5HCrvqg?start=3&amp;rel=0" title="Historia de la clínica" loading="lazy" allowfullscreen></iframe>
+            </div>
+            <h3>Historia de la clínica</h3>
+            <p>Cómo empezó OncoMax y por qué decidimos trabajar de esta forma.</p>
+          </article>
+          <article class="video-item">
+            <div class="video-item__marco">
+              <iframe src="https://www.youtube.com/embed/0Ibl5HCrvqg?start=3&amp;rel=0" title="Ubicación y fundadores" loading="lazy" allowfullscreen></iframe>
+            </div>
+            <h3>Ubicación y fundadores</h3>
+            <p>Dónde estamos y quiénes impulsaron el centro médico.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= PIE DE PAGINA ================= -->
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie__superior">
+        <p class="pie__frase">Tu lucha es nuestra lucha.<br><em>Cuidamos de ti con el corazón.</em></p>
+        <a class="btn" href="reserva.html">Reservar una cita<span class="btn__flecha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      </div>
+      <div class="pie__columnas">
+        <div>
+          <a class="pie__logo" href="index.html"><img src="assets/img/logo-oncomax-horizontal.png" alt="OncoMax" width="139" height="42"></a>
+          <p>Centro Médico Integral Oncológico. Orientación, atención y acompañamiento humano.</p>
+        </div>
+        <div>
+          <h3>Páginas</h3>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="asistencia.html">Asistencia Médica</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="oncologia.html">Oncología</a></li>
+            <li><a href="lazos.html">Lazos de apoyo</a></li>
+            <li><a href="reserva.html">Reservar cita</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contacto</h3>
+          <ul>
+            <li class="pie__dato"><small>WhatsApp</small><a href="https://wa.me/59164556725" target="_blank" rel="noopener">+591 64556725</a></li>
+            <li class="pie__dato"><small>Dirección</small>Antofagasta entre Bolívar y Sucre</li>
+            <li class="pie__dato"><small>Ciudad</small>Oruro, Bolivia</li>
+            <li class="pie__dato"><small>Atención</small>Lunes a viernes, mañana y tarde</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Síguenos</h3>
+          <!-- TikTok e Instagram quedan en # hasta tener los enlaces de la clinica. -->
+          <div class="redes">
+            <a href="#" aria-label="TikTok"><img src="assets/icons/tiktok.svg" alt=""></a>
+            <a href="#" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt=""></a>
+            <a href="https://wa.me/59164556725" target="_blank" rel="noopener" aria-label="WhatsApp"><img src="assets/icons/whatsapp.svg" alt=""></a>
+            <a href="https://www.facebook.com/profile.php?id=61578464102459" target="_blank" rel="noopener" aria-label="Facebook"><img src="assets/icons/facebook.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div class="pie__inferior">
+        <p>© 2026 OncoMax · Centro Médico Integral Oncológico · Oruro, Bolivia.</p>
+        <p>La información de este sitio no reemplaza una consulta médica.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/59164556725" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+    <img src="assets/icons/whatsapp.svg" alt=""><span>Escríbenos</span>
+  </a>
+</body>
+</html>

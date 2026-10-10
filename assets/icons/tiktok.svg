@@ -1,0 +1,13 @@
+<!-- APRENDE: Icono tiktok. Este archivo dibuja una imagen con formas. Para usar otro icono en la página,
+     cambia src de su img en HTML. Para probar otro color aquí, cambia stroke o fill; algunas reglas de
+     estilos.css lo convierten en blanco. -->
+<!-- APRENDE: Espacio de dibujo: viewBox="0 0 24 24" equivale a una hoja de 24 por 24 unidades. Conserva este
+     marco para no recortar el símbolo. El color se elige en fill de cada forma. El tamaño en la página se
+     ajusta en estilos.css, no cambiando este marco. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="TikTok">
+    <!-- APRENDE: Trazo de una parte del icono. fill="#743795" colorea su interior; cambia el código para otro
+       tono. d indica por dónde se dibuja: M mueve el lápiz, L dibuja una recta, H/V una línea
+       horizontal/vertical, C una curva y A un arco; Z cierra la figura. Mayúsculas indican posiciones y
+       minúsculas desplazamientos. Prueba cambiar una medida cada vez para observar la forma. -->
+  <path fill="#743795" d="M16.7 3c.5 2.6 2 4.2 4.3 4.4v3.4c-1.5.1-2.9-.4-4.2-1.2v5.7c0 3.5-2.3 5.7-5.8 5.7-3.1 0-5.5-2.2-5.5-5.1 0-3.2 2.6-5.3 6.2-5v3.5c-1.7-.3-2.7.4-2.7 1.5 0 .9.8 1.5 1.8 1.5 1.2 0 2-.7 2-2.3V3h3.9z"/>
+</svg>

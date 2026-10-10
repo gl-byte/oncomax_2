@@ -1,0 +1,18 @@
+<!-- APRENDE: Icono whatsapp. Este archivo dibuja una imagen con formas. Para usar otro icono en la página,
+     cambia src de su img en HTML. Para probar otro color aquí, cambia stroke o fill; algunas reglas de
+     estilos.css lo convierten en blanco. -->
+<!-- APRENDE: Espacio de dibujo: viewBox="0 0 24 24" equivale a una hoja de 24 por 24 unidades. Conserva este
+     marco para no recortar el símbolo. El color se elige en fill de cada forma. El tamaño en la página se
+     ajusta en estilos.css, no cambiando este marco. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="WhatsApp">
+    <!-- APRENDE: Trazo de una parte del icono. fill="#743795" colorea su interior; cambia el código para otro
+       tono. d indica por dónde se dibuja: M mueve el lápiz, L dibuja una recta, H/V una línea
+       horizontal/vertical, C una curva y A un arco; Z cierra la figura. Mayúsculas indican posiciones y
+       minúsculas desplazamientos. Prueba cambiar una medida cada vez para observar la forma. -->
+  <path fill="#743795" d="M12.04 2C6.53 2 2.06 6.42 2.06 11.88c0 1.91.55 3.7 1.5 5.22L2 22l5.05-1.48a10.1 10.1 0 0 0 4.99 1.27c5.51 0 9.98-4.42 9.98-9.88S17.55 2 12.04 2Zm0 18.08a8.35 8.35 0 0 1-4.31-1.18l-.31-.18-2.98.87.91-2.86-.2-.33a8.02 8.02 0 0 1-1.31-4.52c0-4.51 3.68-8.17 8.2-8.17 4.52 0 8.2 3.66 8.2 8.17 0 4.52-3.68 8.2-8.2 8.2Z"/>
+    <!-- APRENDE: Trazo de una parte del icono. fill="#743795" colorea su interior; cambia el código para otro
+       tono. d indica por dónde se dibuja: M mueve el lápiz, L dibuja una recta, H/V una línea
+       horizontal/vertical, C una curva y A un arco; Z cierra la figura. Mayúsculas indican posiciones y
+       minúsculas desplazamientos. Prueba cambiar una medida cada vez para observar la forma. -->
+  <path fill="#743795" d="M16.58 13.87c-.25-.13-1.5-.73-1.73-.82-.23-.08-.4-.13-.57.13-.17.25-.65.82-.8.98-.15.17-.3.19-.55.06-.25-.13-1.07-.39-2.04-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.39.11-.52.12-.12.25-.3.38-.45.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.57-1.37-.78-1.87-.2-.48-.41-.42-.57-.43h-.48c-.17 0-.45.06-.68.32-.23.25-.9.87-.9 2.12 0 1.25.92 2.46 1.04 2.63.13.17 1.8 2.73 4.36 3.83.61.26 1.08.41 1.45.53.61.19 1.16.17 1.6.1.49-.07 1.5-.61 1.71-1.2.21-.59.21-1.09.15-1.2-.06-.1-.23-.16-.48-.29Z"/>
+</svg>

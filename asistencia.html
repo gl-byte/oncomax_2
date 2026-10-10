@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Especialistas de OncoMax, calendario de atención y pasos para solicitar una consulta.">
+  <title>Asistencia Médica | OncoMax</title>
+  <meta name="theme-color" content="#F8F5F0">
+  <link rel="icon" href="assets/img/logo-simbolo.png">
+  <!-- Marca la pagina como "con JavaScript" antes de pintarla, para evitar parpadeos. -->
+  <script>document.documentElement.classList.add('js');</script>
+  <!-- Tipografias: Fraunces (titulos) y Manrope (texto). -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&amp;family=Manrope:wght@400..800&amp;display=swap">
+  <link rel="stylesheet" href="assets/css/estilos.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <!-- ================= CABECERA ================= -->
+  <header class="barra">
+    <div class="contenedor barra__interior">
+      <a class="barra__logo" href="index.html" aria-label="OncoMax, ir al inicio">
+        <img src="assets/img/logo-oncomax-horizontal.png" alt="OncoMax" width="132" height="40">
+      </a>
+      <nav class="barra__nav" id="menu" aria-label="Principal">
+        <a href="index.html"><span class="barra__nav-num">01</span>Inicio</a>
+        <a href="servicios.html"><span class="barra__nav-num">02</span>Servicios</a>
+        <a href="asistencia.html" aria-current="page"><span class="barra__nav-num">03</span>Asistencia</a>
+        <a href="nosotros.html"><span class="barra__nav-num">04</span>Nosotros</a>
+        <a href="oncologia.html"><span class="barra__nav-num">05</span>Oncología</a>
+        <a href="lazos.html"><span class="barra__nav-num">06</span>Lazos de apoyo</a>
+        <a class="barra__nav-reserva" href="reserva.html"><span class="barra__nav-num">07</span>Reservar cita</a>
+      </nav>
+      <a class="btn btn--chico barra__cta" href="reserva.html">Reservar cita<span class="btn__flecha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <button class="barra__menu" type="button" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span class="sr-solo">Abrir menú</span>
+      </button>
+    </div>
+  </header>
+  <div class="velo" aria-hidden="true"></div>
+
+  <main id="contenido">
+    <!-- ================= CABECERA DE LA PAGINA ================= -->
+    <section class="portada">
+      <div class="contenedor portada__grid">
+        <div>
+          <nav class="migas" aria-label="Ruta de navegación"><a href="index.html">Inicio</a><span aria-hidden="true">/</span><span aria-current="page">Asistencia Médica</span></nav>
+          <p class="antetitulo" data-aparecer>Equipo especialista</p>
+          <h1 class="titular" data-dividir>Asistencia <em>Médica</em></h1>
+          <p class="texto-grande" data-aparecer style="--i:2">Oncología y acompañamiento experto. Conoce la trayectoria de cada
+             profesional y cómo te puede ayudar.</p>
+          <div class="acciones" data-aparecer style="--i:3">
+            <a class="btn" href="reserva.html">Reservar consulta<span class="btn__flecha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+            <a class="enlace" href="#calendario">Ver calendario<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+        <div class="portada__visual con-contorno" data-aparecer style="--i:1">
+          <figure class="arco" data-aparecer="imagen">
+            <img src="assets/img/web/doctor-abdon.jpg" alt="Médico especialista de OncoMax" width="1100" height="1100" style="--foco: 100% 20%; --zoom: 1.9">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ESPECIALISTAS (pestañas) ================= -->
+    <section class="seccion">
+      <div class="contenedor">
+        <div class="encabezado">
+          <p class="antetitulo" data-aparecer><b>01</b> Especialistas</p>
+          <h2 data-dividir>Quién te <em>atiende</em></h2>
+        </div>
+
+        <div class="perfiles" data-pestanas>
+          <div class="perfiles__lista" role="tablist" aria-label="Especialistas" data-aparecer>
+            <button class="pestana" type="button" role="tab" id="tab-elena" aria-controls="panel-elena" aria-selected="true">
+              <span class="pestana__foto"><img src="assets/img/web/cara-dra-elena-rosales.jpg" alt=""></span>
+              <span><b>Dra. Elena Rosales Sokolov</b><small>Oncología quirúrgica</small></span>
+            </button>
+            <button class="pestana" type="button" role="tab" id="tab-amara" aria-controls="panel-amara" aria-selected="false">
+              <span class="pestana__foto"><img src="assets/img/web/cara-dra-amara-orellio.jpg" alt=""></span>
+              <span><b>Dra. Amara Orellio Rojo</b><small>Oncología médica e inmuno-oncología</small></span>
+            </button>
+            <button class="pestana" type="button" role="tab" id="tab-hogar" aria-controls="panel-hogar" aria-selected="false">
+              <span class="pestana__foto"><img class="icono-svg" src="assets/icons/ui/casa.svg" alt=""></span>
+              <span><b>Asistencia domiciliaria</b><small>Apoyo médico en casa</small></span>
+            </button>
+          </div>
+
+          <div>
+            <article class="panel-perfil" role="tabpanel" id="panel-elena" aria-labelledby="tab-elena" tabindex="0">
+              <figure class="arco"><img src="assets/img/web/dra-elena-rosales.jpg" alt="Dra. Elena Rosales Sokolov" loading="lazy" style="--foco: 52% 35%; --zoom: 1.3"></figure>
+              <div>
+                <p class="antetitulo">Oncología quirúrgica</p>
+                <h3>Dra. Elena Rosales Sokolov</h3>
+                <dl class="datos">
+                  <div><dt>Especialidad</dt><dd>Oncología quirúrgica.</dd></div>
+                  <div><dt>Enfoque</dt><dd>Evaluación y tratamiento quirúrgico de pacientes oncológicos, con explicaciones claras antes y después del procedimiento.</dd></div>
+                  <div><dt>Atiende</dt><dd>Lunes, jueves y viernes.</dd></div>
+                </dl>
+                <a class="btn" href="reserva.html">Reservar consulta<span class="btn__flecha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+              </div>
+            </article>
+
+            <article class="panel-perfil" role="tabpanel" id="panel-amara" aria-labelledby="tab-amara" tabindex="0">
+              <figure class="arco"><img src="assets/img/web/dra-amara-orellio.jpg" alt="Dra. Amara Orellio Rojo" loading="lazy" style="--foco: 55% 35%; --zoom: 1.3"></figure>
+              <div>
+                <p class="antetitulo">Oncología médica e inmuno-oncología</p>
+                <h3>Dra. Amara Orellio Rojo</h3>
+                <dl class="datos">
+                  <div><dt>Especialidad</dt><dd>Oncología médica e inmuno-oncología.</dd></div>
+                  <div><dt>Enfoque</dt><dd>Tratamiento integral y seguimiento clínico del paciente a lo largo de todo el proceso.</dd></div>
+                  <div><dt>Atiende</dt><dd>Martes, miércoles y viernes.</dd></div>
+                </dl>
+                <a class="btn" href="reserva.html">Reservar consulta<span class="btn__flecha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+              </div>
+            </article>
+
+            <article class="panel-perfil" role="tabpanel" id="panel-hogar" aria-labelledby="tab-hogar" tabindex="0">
+              <figure class="arco"><img src="assets/img/web/asistencia-domiciliaria.jpg" alt="Asistencia domiciliaria" loading="lazy" style="--foco: 100% 25%; --zoom: 1.5"></figure>
+              <div>
+                <p class="antetitulo">Apoyo médico en casa</p>
+                <h3>Asistencia domiciliaria</h3>
+                <dl class="datos">
+                  <div><dt>¿Qué es?</dt><dd>Un servicio para orientar y acompañar a pacientes que necesitan apoyo médico básico desde su hogar.</dd></div>
+                  <div><dt>Incluye</dt><dd>Control básico, orientación de cuidados y coordinación con el especialista responsable.</dd></div>
+                </dl>
+                <a class="btn" href="reserva.html">Solicitar visita<span class="btn__flecha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PASOS PARA RESERVAR ================= -->
+    <section class="seccion seccion--lino">
+      <div class="contenedor">
+        <div class="encabezado">
+          <p class="antetitulo" data-aparecer><b>02</b> Cómo pedir tu cita</p>
+          <h2 data-dividir>Solo <em>tres pasos</em></h2>
+          <p class="texto-grande" data-aparecer>El proceso es el mismo para consultas en la clínica y para asistencia en casa.</p>
+        </div>
+        <ol class="pasos">
+          <li class="paso">
+            <span class="paso__num">1</span>
+            <h3>Elige</h3>
+            <p>Selecciona la atención que necesitas: pediátrica, quirúrgica, acompañamiento o visita a domicilio.</p>
+          </li>
+          <li class="paso">
+            <span class="paso__num">2</span>
+            <h3>Solicita</h3>
+            <p>Completa los datos básicos de la reserva o escríbenos directamente por WhatsApp.</p>
+          </li>
+          <li class="paso">
+            <span class="paso__num">3</span>
+            <h3>Confirma</h3>
+            <p>La clínica revisa la agenda y confirma el horario por teléfono o por mensaje.</p>
+          </li>
+        </ol>
+        <div class="acciones" data-aparecer>
+          <a class="btn" href="reserva.html">Ir al formulario de reserva<span class="btn__flecha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CALENDARIO ================= -->
+    <section class="seccion" id="calendario">
+      <div class="contenedor">
+        <div class="encabezado">
+          <p class="antetitulo" data-aparecer><b>03</b> Agenda semanal</p>
+          <h2 data-dividir>Calendario <em>de atención</em></h2>
+          <p class="texto-grande" data-aparecer>Así se organiza nuestra semana de consultas.</p>
+        </div>
+
+        <div class="semana-envoltura" data-aparecer>
+          <table class="semana">
+            <caption class="sr-solo">Disponibilidad por día y turno</caption>
+            <thead>
+              <tr><th scope="col"><span class="sr-solo">Turno</span></th><th scope="col">Lunes</th><th scope="col">Martes</th><th scope="col">Miércoles</th><th scope="col">Jueves</th><th scope="col">Viernes</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Mañana</th>
+                <td><span class="estado estado--si">Disponible</span></td>
+                <td><span class="estado estado--no">Ocupado</span></td>
+                <td><span class="estado estado--si">Disponible</span></td>
+                <td><span class="estado estado--si">Disponible</span></td>
+                <td><span class="estado estado--si">Disponible</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Tarde</th>
+                <td><span class="estado estado--si">Disponible</span></td>
+                <td><span class="estado estado--si">Disponible</span></td>
+                <td><span class="estado estado--no">Ocupado</span></td>
+                <td><span class="estado estado--si">Disponible</span></td>
+                <td><span class="estado estado--si">Disponible</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="aviso" data-aparecer>La disponibilidad del horario se confirma al momento de reservar.</p>
+      </div>
+    </section>
+
+    <!-- ================= PREPARAR LA CONSULTA ================= -->
+    <section class="seccion seccion--blanca">
+      <div class="contenedor dos-columnas">
+        <div class="dos-columnas__fija">
+          <p class="antetitulo" data-aparecer><b>04</b> Antes de venir</p>
+          <h2 data-dividir>Cómo preparar <em>tu consulta</em></h2>
+          <p class="texto-grande" data-aparecer>Estas recomendaciones ayudan a aprovechar mejor el tiempo con el profesional.</p>
+        </div>
+        <div class="acordeon" data-aparecer>
+          <details>
+            <summary>¿Qué documentos debo llevar?</summary>
+            <p>Tu documento de identidad y los estudios médicos que tengas, aunque sean antiguos.</p>
+          </details>
+          <details>
+            <summary>¿Puedo venir acompañado?</summary>
+            <p>Sí. Una persona de confianza puede ayudarte a anotar las indicaciones del profesional.</p>
+          </details>
+          <details>
+            <summary>¿Conviene anotar mis dudas?</summary>
+            <p>Sí. Escribir las preguntas antes de la cita evita olvidarlas durante la conversación.</p>
+          </details>
+          <details>
+            <summary>¿Con cuánta anticipación debo llegar?</summary>
+            <p>Diez minutos antes del horario reservado son suficientes para el registro.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= PIE DE PAGINA ================= -->
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie__superior">
+        <p class="pie__frase">Tu lucha es nuestra lucha.<br><em>Cuidamos de ti con el corazón.</em></p>
+        <a class="btn" href="reserva.html">Reservar una cita<span class="btn__flecha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      </div>
+      <div class="pie__columnas">
+        <div>
+          <a class="pie__logo" href="index.html"><img src="assets/img/logo-oncomax-horizontal.png" alt="OncoMax" width="139" height="42"></a>
+          <p>Centro Médico Integral Oncológico. Orientación, atención y acompañamiento humano.</p>
+        </div>
+        <div>
+          <h3>Páginas</h3>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="asistencia.html">Asistencia Médica</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="oncologia.html">Oncología</a></li>
+            <li><a href="lazos.html">Lazos de apoyo</a></li>
+            <li><a href="reserva.html">Reservar cita</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contacto</h3>
+          <ul>
+            <li class="pie__dato"><small>WhatsApp</small><a href="https://wa.me/59164556725" target="_blank" rel="noopener">+591 64556725</a></li>
+            <li class="pie__dato"><small>Dirección</small>Antofagasta entre Bolívar y Sucre</li>
+            <li class="pie__dato"><small>Ciudad</small>Oruro, Bolivia</li>
+            <li class="pie__dato"><small>Atención</small>Lunes a viernes, mañana y tarde</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Síguenos</h3>
+          <!-- TikTok e Instagram quedan en # hasta tener los enlaces de la clinica. -->
+          <div class="redes">
+            <a href="#" aria-label="TikTok"><img src="assets/icons/tiktok.svg" alt=""></a>
+            <a href="#" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt=""></a>
+            <a href="https://wa.me/59164556725" target="_blank" rel="noopener" aria-label="WhatsApp"><img src="assets/icons/whatsapp.svg" alt=""></a>
+            <a href="https://www.facebook.com/profile.php?id=61578464102459" target="_blank" rel="noopener" aria-label="Facebook"><img src="assets/icons/facebook.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div class="pie__inferior">
+        <p>© 2026 OncoMax · Centro Médico Integral Oncológico · Oruro, Bolivia.</p>
+        <p>La información de este sitio no reemplaza una consulta médica.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/59164556725" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+    <img src="assets/icons/whatsapp.svg" alt=""><span>Escríbenos</span>
+  </a>
+</body>
+</html>

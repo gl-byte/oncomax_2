@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reserva tu cita en OncoMax y encuentra cómo llegar a la clínica en Oruro, Bolivia.">
+  <title>Reserva | OncoMax</title>
+  <meta name="theme-color" content="#F8F5F0">
+  <link rel="icon" href="assets/img/logo-simbolo.png">
+  <!-- Marca la pagina como "con JavaScript" antes de pintarla, para evitar parpadeos. -->
+  <script>document.documentElement.classList.add('js');</script>
+  <!-- Tipografias: Fraunces (titulos) y Manrope (texto). -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&amp;family=Manrope:wght@400..800&amp;display=swap">
+  <link rel="stylesheet" href="assets/css/estilos.css">
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/reserva.js" defer></script>
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <!-- ================= CABECERA ================= -->
+  <header class="barra">
+    <div class="contenedor barra__interior">
+      <a class="barra__logo" href="index.html" aria-label="OncoMax, ir al inicio">
+        <img src="assets/img/logo-oncomax-horizontal.png" alt="OncoMax" width="132" height="40">
+      </a>
+      <nav class="barra__nav" id="menu" aria-label="Principal">
+        <a href="index.html"><span class="barra__nav-num">01</span>Inicio</a>
+        <a href="servicios.html"><span class="barra__nav-num">02</span>Servicios</a>
+        <a href="asistencia.html"><span class="barra__nav-num">03</span>Asistencia</a>
+        <a href="nosotros.html"><span class="barra__nav-num">04</span>Nosotros</a>
+        <a href="oncologia.html"><span class="barra__nav-num">05</span>Oncología</a>
+        <a href="lazos.html"><span class="barra__nav-num">06</span>Lazos de apoyo</a>
+        <a class="barra__nav-reserva" href="reserva.html" aria-current="page"><span class="barra__nav-num">07</span>Reservar cita</a>
+      </nav>
+      <a class="btn btn--chico barra__cta" href="reserva.html" aria-current="page">Reservar cita<span class="btn__flecha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <button class="barra__menu" type="button" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span class="sr-solo">Abrir menú</span>
+      </button>
+    </div>
+  </header>
+  <div class="velo" aria-hidden="true"></div>
+
+  <main id="contenido">
+    <!-- ================= CABECERA DE LA PAGINA ================= -->
+    <section class="portada">
+      <div class="contenedor portada__grid">
+        <div>
+          <nav class="migas" aria-label="Ruta de navegación"><a href="index.html">Inicio</a><span aria-hidden="true">/</span><span aria-current="page">Reserva</span></nav>
+          <p class="antetitulo" data-aparecer>Agenda tu atención</p>
+          <h1 class="titular" data-dividir>Reservar <em>una cita</em></h1>
+          <p class="texto-grande" data-aparecer style="--i:2">Completa los datos y la clínica se comunica contigo para confirmar el horario.</p>
+          <nav class="saltos" aria-label="En esta página" data-aparecer style="--i:3">
+            <a class="enlace" href="#formulario">Formulario<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="enlace" href="#ubicacion">Cómo llegar<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </nav>
+        </div>
+        <div class="portada__visual con-contorno" data-aparecer style="--i:1">
+          <figure class="arco" data-aparecer="imagen">
+            <img src="assets/img/web/enfermera-sofia.jpg" alt="Enfermera de OncoMax" width="1100" height="1100" style="--foco: 100% 15%; --zoom: 2">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= QUE PASA DESPUES ================= -->
+    <section class="seccion seccion--corta">
+      <div class="contenedor">
+        <ol class="pasos">
+          <li class="paso">
+            <span class="paso__num">1</span>
+            <h3>Completa</h3>
+            <p>Escribe tus datos y elige el servicio, la fecha y el turno que prefieres.</p>
+          </li>
+          <li class="paso">
+            <span class="paso__num">2</span>
+            <h3>Espera</h3>
+            <p>La clínica revisa la agenda del especialista correspondiente.</p>
+          </li>
+          <li class="paso">
+            <span class="paso__num">3</span>
+            <h3>Confirma</h3>
+            <p>Recibes una llamada o un mensaje con el horario definitivo.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= FORMULARIO ================= -->
+    <section class="seccion seccion--lino" id="formulario">
+      <div class="contenedor">
+        <div class="encabezado">
+          <p class="antetitulo" data-aparecer><b>01</b> Solicitud</p>
+          <h2 data-dividir>Formulario <em>de solicitud</em></h2>
+        </div>
+
+        <div class="reserva">
+          <!-- reserva.js muestra un paso a la vez y al final abre WhatsApp con
+               la solicitud. Sin JavaScript se ven los tres pasos y action
+               lleva a #enviado, que muestra el numero de la clinica. -->
+          <form class="asistente primero" id="form-reserva" action="#enviado" data-aparecer>
+            <p class="envio" id="enviado" role="status" tabindex="-1"><span>Para confirmar tu cita, escríbenos por WhatsApp al <a href="https://wa.me/59164556725" target="_blank" rel="noopener">+591 64556725</a>.</span></p>
+
+            <ol class="progreso-pasos" aria-label="Pasos de la solicitud">
+              <li class="actual" aria-current="step"><b>01</b>Servicio</li>
+              <li><b>02</b>Fecha</li>
+              <li><b>03</b>Tus datos</li>
+            </ol>
+
+            <!-- Paso 1 -->
+            <fieldset class="etapa actual">
+              <legend>¿Qué atención necesitas?</legend>
+              <fieldset class="grupo">
+                <legend>Servicio solicitado</legend>
+                <div class="opciones">
+                  <label class="opcion"><input type="radio" name="servicio" value="Oncología pediátrica" required><span class="opcion__caja"><img src="assets/icons/ui/sonrisa.svg" alt="">Oncología pediátrica</span></label>
+                  <label class="opcion"><input type="radio" name="servicio" value="Oncología quirúrgica"><span class="opcion__caja"><img src="assets/icons/ui/estetoscopio.svg" alt="">Oncología quirúrgica</span></label>
+                  <label class="opcion"><input type="radio" name="servicio" value="Acompañamiento integral"><span class="opcion__caja"><img src="assets/icons/ui/corazon.svg" alt="">Acompañamiento integral</span></label>
+                  <label class="opcion"><input type="radio" name="servicio" value="Asistencia domiciliaria"><span class="opcion__caja"><img src="assets/icons/ui/casa.svg" alt="">Asistencia domiciliaria</span></label>
+                </div>
+              </fieldset>
+              <fieldset class="grupo">
+                <legend>¿Para quién es la cita?</legend>
+                <div class="opciones opciones--3">
+                  <label class="opcion opcion--chip"><input type="radio" name="paciente" value="Para mí" required><span class="opcion__caja">Para mí</span></label>
+                  <label class="opcion opcion--chip"><input type="radio" name="paciente" value="Para un familiar"><span class="opcion__caja">Para un familiar</span></label>
+                  <label class="opcion opcion--chip"><input type="radio" name="paciente" value="Para una persona a mi cuidado"><span class="opcion__caja">Para una persona a mi cuidado</span></label>
+                </div>
+              </fieldset>
+            </fieldset>
+
+            <!-- Paso 2 -->
+            <fieldset class="etapa">
+              <legend>¿Cuándo prefieres venir?</legend>
+              <div class="campo">
+                <label for="fecha">Fecha preferida</label>
+                <input id="fecha" name="fecha" type="date" required>
+                <p class="ayuda-campo">Atendemos de lunes a viernes.</p>
+              </div>
+              <fieldset class="grupo">
+                <legend>Turno preferido</legend>
+                <div class="opciones">
+                  <label class="opcion opcion--chip"><input type="radio" name="turno" value="Mañana" required><span class="opcion__caja">Mañana</span></label>
+                  <label class="opcion opcion--chip"><input type="radio" name="turno" value="Tarde"><span class="opcion__caja">Tarde</span></label>
+                </div>
+              </fieldset>
+            </fieldset>
+
+            <!-- Paso 3 -->
+            <fieldset class="etapa">
+              <legend>Tus datos de contacto</legend>
+              <div class="campos">
+                <div class="campo">
+                  <label for="nombre">Nombre completo</label>
+                  <input id="nombre" name="nombre" type="text" placeholder="Ej. María Pérez" autocomplete="name" required>
+                </div>
+                <div class="campo">
+                  <label for="telefono">Número de teléfono</label>
+                  <input id="telefono" name="telefono" type="tel" placeholder="Ej. 64556725" pattern="[0-9+ ]{7,15}" autocomplete="tel" required>
+                  <p class="ayuda-campo">Entre 7 y 15 dígitos.</p>
+                </div>
+              </div>
+              <fieldset class="grupo">
+                <legend>¿Cómo prefieres recibir la confirmación?</legend>
+                <div class="opciones">
+                  <label class="opcion opcion--chip"><input type="radio" name="contacto" value="WhatsApp" required><span class="opcion__caja">WhatsApp</span></label>
+                  <label class="opcion opcion--chip"><input type="radio" name="contacto" value="Llamada telefónica"><span class="opcion__caja">Llamada telefónica</span></label>
+                </div>
+              </fieldset>
+              <div class="campo">
+                <label for="mensaje">Mensaje adicional</label>
+                <textarea id="mensaje" name="mensaje" rows="4" maxlength="600" placeholder="Cuéntanos brevemente el motivo de tu consulta."></textarea>
+              </div>
+              <label class="aceptar"><input name="acepto" type="checkbox" required> Acepto que la clínica me contacte por el medio elegido.</label>
+            </fieldset>
+
+            <div class="asistente__nav">
+              <button class="btn btn--linea btn--sin-flecha" type="button" data-anterior>Atrás</button>
+              <button class="btn" type="button" data-siguiente>Continuar<span class="btn__flecha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+              <button class="btn btn--whatsapp" type="submit">Enviar solicitud por WhatsApp<span class="btn__flecha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+            </div>
+          </form>
+
+          <aside class="contacto-lateral" data-aparecer style="--i:1">
+            <h3>Estamos para ayudarte</h3>
+            <p>Si prefieres, escríbenos directamente y te ayudamos a elegir el servicio.</p>
+            <ul class="lista-datos">
+              <li><small>WhatsApp</small><a href="https://wa.me/59164556725" target="_blank" rel="noopener">+591 64556725</a></li>
+              <li><small>Atención</small>De lunes a viernes, mañana y tarde</li>
+              <li><small>Dirección</small>Antofagasta entre Bolívar y Sucre, Oruro</li>
+            </ul>
+            <a class="btn btn--claro btn--chico" href="https://wa.me/59164556725" target="_blank" rel="noopener">Prefiero WhatsApp<span class="btn__flecha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          </aside>
+        </div>
+
+        <div class="bloque-preguntas acordeon" data-aparecer>
+          <details>
+            <summary>¿Cuánto tarda la confirmación?</summary>
+            <p>La clínica responde dentro del mismo día hábil.</p>
+          </details>
+          <details>
+            <summary>¿Puedo cambiar mi cita después?</summary>
+            <p>Sí. Escríbenos por WhatsApp indicando tu nombre y la fecha reservada.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= UBICACION ================= -->
+    <section class="seccion" id="ubicacion">
+      <div class="contenedor">
+        <div class="encabezado">
+          <p class="antetitulo" data-aparecer><b>02</b> Ubicación</p>
+          <h2 data-dividir>Cómo <em>llegar</em></h2>
+        </div>
+
+        <div class="ubicacion">
+          <!-- Croquis: cada caja es una calle; la clinica lleva un punto que late. -->
+          <figure class="croquis" role="img" aria-label="Croquis: OncoMax está sobre la calle Antofagasta, entre las calles Bolívar y Sucre" data-aparecer>
+            <div class="calle calle--h calle--bolivar"><span>Calle Bolívar</span></div>
+            <div class="calle calle--h calle--sucre"><span>Calle Sucre</span></div>
+            <div class="calle calle--v"><span>Antofagasta</span></div>
+            <div class="clinica"><span class="pin"></span>OncoMax</div>
+          </figure>
+
+          <div data-aparecer style="--i:1">
+            <h3>Datos útiles</h3>
+            <ul class="lista-datos lista-datos--clara">
+              <li><small>Dirección</small>Antofagasta entre Bolívar y Sucre, Oruro, Bolivia.</li>
+              <li><small>WhatsApp</small><a href="https://wa.me/59164556725" target="_blank" rel="noopener">+591 64556725</a></li>
+              <li><small>Atención</small>De lunes a viernes, mañana y tarde.</li>
+            </ul>
+            <p class="aviso">Llega diez minutos antes de tu horario para completar el registro.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= PIE DE PAGINA ================= -->
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie__superior">
+        <p class="pie__frase">Tu lucha es nuestra lucha.<br><em>Cuidamos de ti con el corazón.</em></p>
+        <a class="btn" href="reserva.html">Reservar una cita<span class="btn__flecha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      </div>
+      <div class="pie__columnas">
+        <div>
+          <a class="pie__logo" href="index.html"><img src="assets/img/logo-oncomax-horizontal.png" alt="OncoMax" width="139" height="42"></a>
+          <p>Centro Médico Integral Oncológico. Orientación, atención y acompañamiento humano.</p>
+        </div>
+        <div>
+          <h3>Páginas</h3>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="asistencia.html">Asistencia Médica</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="oncologia.html">Oncología</a></li>
+            <li><a href="lazos.html">Lazos de apoyo</a></li>
+            <li><a href="reserva.html">Reservar cita</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contacto</h3>
+          <ul>
+            <li class="pie__dato"><small>WhatsApp</small><a href="https://wa.me/59164556725" target="_blank" rel="noopener">+591 64556725</a></li>
+            <li class="pie__dato"><small>Dirección</small>Antofagasta entre Bolívar y Sucre</li>
+            <li class="pie__dato"><small>Ciudad</small>Oruro, Bolivia</li>
+            <li class="pie__dato"><small>Atención</small>Lunes a viernes, mañana y tarde</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Síguenos</h3>
+          <!-- TikTok e Instagram quedan en # hasta tener los enlaces de la clinica. -->
+          <div class="redes">
+            <a href="#" aria-label="TikTok"><img src="assets/icons/tiktok.svg" alt=""></a>
+            <a href="#" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt=""></a>
+            <a href="https://wa.me/59164556725" target="_blank" rel="noopener" aria-label="WhatsApp"><img src="assets/icons/whatsapp.svg" alt=""></a>
+            <a href="https://www.facebook.com/profile.php?id=61578464102459" target="_blank" rel="noopener" aria-label="Facebook"><img src="assets/icons/facebook.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div class="pie__inferior">
+        <p>© 2026 OncoMax · Centro Médico Integral Oncológico · Oruro, Bolivia.</p>
+        <p>La información de este sitio no reemplaza una consulta médica.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/59164556725" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+    <img src="assets/icons/whatsapp.svg" alt=""><span>Escríbenos</span>
+  </a>
+</body>
+</html>

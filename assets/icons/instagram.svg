@@ -1,0 +1,13 @@
+<!-- APRENDE: Icono instagram. Este archivo dibuja una imagen con formas. Para usar otro icono en la página,
+     cambia src de su img en HTML. Para probar otro color aquí, cambia stroke o fill; algunas reglas de
+     estilos.css lo convierten en blanco. -->
+<!-- APRENDE: Espacio de dibujo: viewBox="0 0 24 24" equivale a una hoja de 24 por 24 unidades. Conserva este
+     marco para no recortar el símbolo. El color se elige en fill de cada forma. El tamaño en la página se
+     ajusta en estilos.css, no cambiando este marco. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="Instagram">
+    <!-- APRENDE: Trazo de una parte del icono. fill="#743795" colorea su interior; cambia el código para otro
+       tono. d indica por dónde se dibuja: M mueve el lápiz, L dibuja una recta, H/V una línea
+       horizontal/vertical, C una curva y A un arco; Z cierra la figura. Mayúsculas indican posiciones y
+       minúsculas desplazamientos. Prueba cambiar una medida cada vez para observar la forma. -->
+  <path fill="#743795" d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9zm4.5 3.3a4.7 4.7 0 1 1 0 9.4 4.7 4.7 0 0 1 0-9.4zm0 2a2.7 2.7 0 1 0 0 5.4 2.7 2.7 0 0 0 0-5.4zm5-2.4a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/>
+</svg>
